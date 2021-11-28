@@ -1,0 +1,269 @@
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+   font-weight: 100;
+   font-size: 17px;
+   line-height: 1.6;
+   background-color: #FFFFF0;
+}
+ h1 {
+  font-size: 27px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 100;
+}
+p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+/*Button*/
+button{
+  border: none;
+  font-family: inherit;
+  background-color: #1c3b0e;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.button__secondary {
+  background-color: #1c3b0e;
+  color: #E8EBE6;
+}
+
+a:visited{
+  color:#FF6347;
+}
+  a:hover{
+  color:#808000;
+}
+
+a:active{
+  color:#FFFF00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* navigation bar*/
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 50%
+  }
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction:column;
+  text-align:center;
+}
+
+
+
+
+.profile__text {
+    flex: 1 1 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.page-header {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+/* grid*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+.grid__item {
+  background-color: lightgray;
+  display: inline-block;
+  width: 33%;
+}
+
+/* end grid fallback */
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+
+ .grid__item {
+   background-color: lightgray;
+   width: auto;
+   min-height: auto;
+   margin: 0;
+   padding: 10px;
+ }
+
+.logo{
+  flex: 0 0 auto;
+  float: left;
+  max-width: 200px;
+  max-height: 100px;
+  margin: auto;
+  padding: 10;
+}
+.button{
+  border: none;
+  font-family: inherit;
+  background-color: #167F45 ;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  border-bottom: 2px;
+  opacity: 0.8;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  transition-duration: 0.9s;
+  transition-property: opacity;
+  opacity: 0.5;
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.sun {
+    animation: 10s color-change infinite alternate linear;
+  }
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+    li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+    .navigation-list__item--active {
+      text-decoration: none;
+    }
+
+
+ 
+
+
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+}
+a {
+  color: var(--primary-color);
+}
