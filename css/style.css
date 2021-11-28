@@ -178,7 +178,7 @@ a:active{
   max-width: 200px;
   max-height: 100px;
   margin: auto;
-  padding: 10;
+  padding: 10px;
 }
 .button{
   border: none;
@@ -256,7 +256,7 @@ button:focus,
     }
 
 
- 
+
 
 
 :root {
