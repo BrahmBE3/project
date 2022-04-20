@@ -175,8 +175,8 @@ a:active{
 .logo{
   flex: 0 0 auto;
   float: left;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   margin: auto;
   padding: 10px;
 }
